@@ -1,0 +1,13 @@
+h1 {
+    font-size: 24;
+    text-align: center;
+}
+
+.container {
+    width: 600px;
+}
+
+li {
+    list-style-type: none;
+}
+

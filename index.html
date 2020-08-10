@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <!--link css sheet-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--link to bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <!--link momentjs-->
+    <!--link to font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+      />
+    <script type="text/javascript"></script>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <h1><span class="navbar-brand mb-0 h1">Weather Dashboard</span></h1>
+    </nav>
+<div class="container">
+    <div class="row">
+
+<!--1 row with columns -->
+<div class="row">
+    <!--city search and list column-->
+    <div class="col-md-4">
+    <!--search for city input form-->
+    <!-- This form will be where users input city-->
+        <form>
+            <label for="city-search">Search For a City</label>
+            <input type="text" id="city-search">
+            <!-- This button will trigger the AJAX call -->
+            <button id="search-submit" type="submit" value="City Search" class="fas fa-search btn btn-primary"></button>
+        </form>
+        <!--city list-->
+        <div class="card" style="width: 18rem;">
+            <ul class="city-list list-group list-group-flush"></ul>
+        </div>  
+    </div> 
+
+<!--weather columns-->
+<div class="col-md-8 border">
+     <div class="row dayForcast">
+          <!--retrieved data from API will be dumped into these divs-->
+        <div class="weather"></div>
+        <div class="city"></div>
+        <div class="date"></div>
+        <div class="temperature"></div>
+        <div class="humidity"></div>
+        <div class="wind-speed"></div>
+        <div clas="uv-index"></div>
+        <div class="todaysWeather">Today's weather is: <span></span></div>
+    </div>
+
+    <div class="row fiveDayForcast">
+        <div class=""></div>
+
+
+
+   
+
+
+ 
+  
+</div>
+</div> 
+
+</div>
+</div>
+<!--link to moment.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<!--link to jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--link javascript-->
+<script src="script.js"></script>
+</body>
+</html>
